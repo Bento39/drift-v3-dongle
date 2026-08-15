@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: drift}
 layers:
-  base: [ESC, '`', ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, TAB, Sft+Gui+PAGE UP, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE
-      DOWN, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', UP ARROW, LEFT SHIFT, LCTRL, LALT, Z, X, C, V, B, PLAY PAUSE, MUTE, N, M, ',', ., /, LEFT ARROW, DOWN ARROW,
-    RIGHT ARROW, LEFT COMMAND, SPACE, lower, Sft+Gui+S, ENTER, RIGHT SHIFT]
-  lower:
+  base: [ESC, '`', ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, TAB, PAGE UP, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE DOWN,
+    CAPS, A, S, D, F, G, H, J, K, L, ;, '''', UP ARROW, LEFT SHIFT, LCTRL, LALT, Z, X, C, V, B, PLAY PAUSE, MUTE, N, M, ',', ., /, LEFT ARROW, DOWN ARROW, RIGHT ARROW,
+    LEFT COMMAND, SPACE, raise, DEL, ENTER, RIGHT SHIFT]
+  raise:
   - ESC
   - '`'
   - ESC
@@ -21,7 +21,7 @@ layers:
   - F12
   - BSPC
   - TAB
-  - Sft+Gui+PAGE UP
+  - PAGE UP
   - TAB
   - Q
   - W
@@ -43,10 +43,10 @@ layers:
   - D
   - F
   - G
-  - H
-  - J
-  - K
-  - L
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
   - ;
   - ''''
   - UP ARROW
@@ -60,8 +60,8 @@ layers:
   - B
   - PLAY PAUSE
   - MUTE
-  - N
-  - M
+  - '&mkp MB4'
+  - '&mkp MB5'
   - ','
   - .
   - /
@@ -70,81 +70,7 @@ layers:
   - RIGHT ARROW
   - LEFT COMMAND
   - SPACE
-  - {t: lower, type: held}
-  - Sft+Gui+S
-  - ENTER
-  - RIGHT SHIFT
-  raise: [ESC, '`', ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, TAB, Sft+Gui+PAGE UP, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE
-      DOWN, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', UP ARROW, LEFT SHIFT, LCTRL, LALT, Z, X, C, V, B, PLAY PAUSE, MUTE, N, M, ',', ., /, LEFT ARROW, DOWN ARROW,
-    RIGHT ARROW, LEFT COMMAND, SPACE, lower, Sft+Gui+S, ENTER, RIGHT SHIFT]
-  adjust:
-  - ESC
-  - '`'
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - '='
-  - BSPC
-  - TAB
-  - Sft+Gui+PAGE UP
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - ']'
-  - \
-  - PAGE DOWN
-  - CAPS
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - UP ARROW
-  - LEFT SHIFT
-  - LCTRL
-  - LALT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - PLAY PAUSE
-  - MUTE
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - LEFT COMMAND
-  - SPACE
-  - {t: lower, type: held}
-  - Sft+Gui+S
-  - ENTER
-  - RIGHT SHIFT
+  - {t: raise, type: held}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
