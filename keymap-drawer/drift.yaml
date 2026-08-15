@@ -5,8 +5,8 @@ layers:
     LEFT COMMAND, SPACE, raise, DEL, ENTER, RIGHT SHIFT]
   raise:
   - ESC
-  - '`'
-  - ESC
+  - '&mkp MB4'
+  - '&mkp MB5'
   - F1
   - F2
   - F3
@@ -60,8 +60,8 @@ layers:
   - B
   - PLAY PAUSE
   - MUTE
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - N
+  - M
   - ','
   - .
   - /
