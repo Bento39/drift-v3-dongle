@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: drift}
 layers:
-  base: [ESC, '`', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, TAB, Sft+Gui+PAGE UP, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE
+  base: [ESC, '`', ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, TAB, Sft+Gui+PAGE UP, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE
       DOWN, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', UP ARROW, LEFT SHIFT, LCTRL, LALT, Z, X, C, V, B, PLAY PAUSE, MUTE, N, M, ',', ., /, LEFT ARROW, DOWN ARROW,
     RIGHT ARROW, LEFT COMMAND, SPACE, lower, Sft+Gui+S, ENTER, RIGHT SHIFT]
   lower:
