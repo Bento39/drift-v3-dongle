@@ -4,25 +4,25 @@ layers:
       DOWN, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', UP ARROW, LEFT SHIFT, LCTRL, LALT, Z, X, C, V, B, PLAY PAUSE, MUTE, N, M, ',', ., /, LEFT ARROW, DOWN ARROW,
     RIGHT ARROW, LEFT COMMAND, SPACE, lower, Sft+Gui+S, ENTER, RIGHT SHIFT]
   lower:
-  - '&bootloader'
+  - ESC
   - '`'
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - '='
   - BSPC
-  - {t: ▽, type: trans}
-  - PAGE UP
-  - {t: ▽, type: trans}
+  - TAB
+  - Sft+Gui+PAGE UP
+  - TAB
   - Q
   - W
   - E
@@ -37,7 +37,7 @@ layers:
   - ']'
   - \
   - PAGE DOWN
-  - {t: ▽, type: trans}
+  - CAPS
   - A
   - S
   - D
@@ -49,8 +49,8 @@ layers:
   - L
   - ;
   - ''''
-  - '&mmv MOVE_UP'
-  - {t: ▽, type: trans}
+  - UP ARROW
+  - LEFT SHIFT
   - LCTRL
   - LALT
   - Z
@@ -65,105 +65,37 @@ layers:
   - ','
   - .
   - /
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - LEFT COMMAND
   - SPACE
-  - {type: held}
-  - '&mkp MB1'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  raise:
-  - BT CLR
-  - BT CLR
-  - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '&msc SCRL_UP'
-  - '&bootloader'
-  - Ctl+C
-  - {t: ▽, type: trans}
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '&mkp MCLK'
-  - '&msc SCRL_DOWN'
-  - '&mkp RCLK'
-  - LGUI
-  - CAPS
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - Ctl+V
-  - LCTRL
-  - LALT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - MUTE
-  - MUTE
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - LSHFT
-  - SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SPACE
-  - DEL
+  - {t: lower, type: held}
+  - Sft+Gui+S
+  - ENTER
+  - RIGHT SHIFT
+  raise: [ESC, '`', ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, TAB, Sft+Gui+PAGE UP, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PAGE
+      DOWN, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', UP ARROW, LEFT SHIFT, LCTRL, LALT, Z, X, C, V, B, PLAY PAUSE, MUTE, N, M, ',', ., /, LEFT ARROW, DOWN ARROW,
+    RIGHT ARROW, LEFT COMMAND, SPACE, lower, Sft+Gui+S, ENTER, RIGHT SHIFT]
   adjust:
-  - BT CLR
-  - BT CLR
-  - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '&msc SCRL_UP'
-  - BT CLR
-  - Ctl+C
-  - {t: ▽, type: trans}
+  - ESC
+  - '`'
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - '='
+  - BSPC
+  - TAB
+  - Sft+Gui+PAGE UP
   - TAB
   - Q
   - W
@@ -176,9 +108,9 @@ layers:
   - O
   - P
   - '['
-  - '&msc SCRL_DOWN'
-  - '&mkp RCLK'
-  - LGUI
+  - ']'
+  - \
+  - PAGE DOWN
   - CAPS
   - A
   - S
@@ -190,9 +122,9 @@ layers:
   - K
   - L
   - ;
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - Ctl+V
+  - ''''
+  - UP ARROW
+  - LEFT SHIFT
   - LCTRL
   - LALT
   - Z
@@ -200,19 +132,19 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - PLAY PAUSE
   - MUTE
   - N
   - M
   - ','
   - .
   - /
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - LSHFT
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - LEFT COMMAND
   - SPACE
-  - {type: held}
-  - {t: ▽, type: trans}
-  - SPACE
-  - BSPC
+  - {t: lower, type: held}
+  - Sft+Gui+S
+  - ENTER
+  - RIGHT SHIFT
